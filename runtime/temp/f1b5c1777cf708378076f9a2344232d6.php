@@ -1,0 +1,190 @@
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:94:"C:\Users\HP\Desktop\PHP5.0\public/../application/index\view\forgetpassword\Forgetpassword.html";i:1541481313;}*/ ?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+                *{
+            margin: 0;
+            padding: 0;
+        }
+        .w{
+  width: 1280px;
+  margin: 0 auto;
+}
+.Daohang{
+  width: 100%;
+  background-color: #fff;
+}
+.beijin{
+  overflow: hidden;
+}
+.logo{
+  width: 20%;
+  height: 74px;
+  background-color: #fff;
+  float: left;
+  line-height: 7;
+}
+.Navigation{
+  width: 80%;
+  height: 74px;
+  background-color: #fff;
+  float: left;
+}
+.Navigation li{
+  float: left;
+  list-style: none;
+  margin-right: 5px;
+  text-align: center;
+  line-height: 74px;
+  width: 130px;
+  height: 69px;
+}
+.Navigation li a{
+display: inline-block;
+width: 130px;
+height: 60px;
+}
+.Navigation li:hover hr{
+animation: move 1s;
+-webkit-animation-fill-mode: both;
+}
+.Navigation hr{
+  position: absolute;
+  border: 0;
+  height: 5px;
+  background-color: #349ce4;
+  border-radius: 5px;
+  margin-top: 0;
+}
+@keyframes move {
+0%{width: 0px}
+100% {width: 130px}
+}
+.Navigation li:hover{
+color: #349ce4;
+}
+.Navigation li:hover a {
+color: #349ce3;
+}
+.Navigation li:hover hr{
+background-color: #349ce4;
+}
+.Navigation li:nth-child(1){
+  margin-left: 100px;
+}
+.Navigation li:nth-child(6){
+  margin-right: 10px;
+}
+.Navigation li a{
+  color: #34352c;
+  font-size: 18px;
+}
+/* .Navigation li:nth-child(1) a{
+color: #fff;
+} */
+.Navigation li a{
+text-decoration: none;
+}
+.ziti{
+color: #fff;
+}
+.Navigation button{
+  width: 50px;
+  height: 30px;
+  display: inline-block;
+  margin-top: 22px; 
+  color: #fff;
+  background-color: #349ce4;
+  border: 0;
+}
+.Navigation a{
+  text-decoration: none;
+}
+.Forget{
+    margin-top: 20px;
+    height: 400px;
+    background-color: #ccc;
+    overflow: hidden;
+}
+.Forget div{
+    width: 50%;
+    height: 400px;
+    float: left;
+    border: 0;
+}
+.Forget_two{
+    background-color: #fff;
+    line-height: 2;
+}
+.Forget_two h2{
+    margin-top: 100px;
+    color: #769cd5;
+}
+.Forget_two form{
+    margin-left: 40px;
+}
+.Forget_two input{
+    width: 200px;
+    height: 30px;
+    display: block;
+    margin-top: 10px;
+    padding-left: 8px;
+    font-size: 19px;
+}
+.Forget_two button{
+    width: 100px;
+    height: 30px;
+    background-color: #3582da;
+    border: 1px solid #3582da;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+    </style>
+</head>
+<body>
+    <div id="mk1" class="Daohang mk w s1">
+        <div class="beijin w">
+            <div class="logo">
+                <a href="#"><img src="http://www.tp5.com/static/index/imags/logo2.png"></a>
+            </div>
+            <div class="Navigation">
+                <ul>
+                    <li id="Navigation_1" class="bianhuan"><a href="http://www.tp5.com" class="">网站首页</a>
+                      <hr>
+                    </li>
+                    <li id="Navigation_2"><a href="http://www.tp5.com/index/Study">学习指南</a>
+                    <hr></li>
+                    <li id="Navigation_3"><a href="#">课程  中心</a>
+                    <hr></li>
+                    <li id="Navigation_4"><a href="http://www.tp5.com/index/Certificate">证书查询</a>
+                    <hr></li>
+                    <li id="Navigation_5"><a href="http://www.tp5.com/index/journalism">新闻资讯</a>
+                    <hr></li>
+                    <li id="Navigation_6"><a href="#">关于我们</a>
+                    <hr></li>
+                </ul>
+                <a href="Enterprise/index2"><button>登陆</button></a>
+                <a href="http://www.tp5.com/index/Register"><button>注册</button></a>
+            </div>
+        </div>
+    </div>
+    <div class="Forget w">
+        <div class="Forget_one">
+            
+        </div><div class="Forget_two">
+            <form action="Forgetpassword/user" method="post">
+                <h2>忘记密码</h2>
+                <h6>请输入验证的账号，用于重设密码信息</h6>
+                <input type="text" name="username" placeholder="请输入您的账号">
+                <input type="submit" value="确定">
+            </form>
+        </div>
+        
+    </div>
+</body>
+</html>
